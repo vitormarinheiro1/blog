@@ -3,6 +3,7 @@ import Background from "./patterns/Background/Background";
 import Menu from "./patterns/Menu/Menu";
 import Text from "@src/components/Text/Text";
 import Feed from "./patterns/Feed/Feed";
+import Footer from "./patterns/Footer/Footer";
 
 function HomeScreen() {
   return (
@@ -16,6 +17,7 @@ function HomeScreen() {
         </Text>
         <Feed.Posts />
       </Feed>
+      <Footer />
     </Box>
   );
 }
