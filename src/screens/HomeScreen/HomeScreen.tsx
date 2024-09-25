@@ -1,4 +1,4 @@
-import Box from "@src/components/Box/Box";
+import { BaseComponent } from "@src/theme/BaseComponent";
 import Background from "./patterns/Background/Background";
 import Menu from "./patterns/Menu/Menu";
 import Text from "@src/components/Text/Text";
@@ -7,18 +7,18 @@ import Footer from "./patterns/Footer/Footer";
 
 function HomeScreen() {
   return (
-    <Box tag="main">
+    <BaseComponent tag="main">
       <Background />
       <Menu />
       <Feed>
         <Feed.Header />
-        <Text>
+        <Text tag="h2" variant="display1">
             últimas atualizações
         </Text>
         <Feed.Posts />
       </Feed>
       <Footer />
-    </Box>
+    </BaseComponent>
   );
 }
 
