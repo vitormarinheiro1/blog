@@ -13,7 +13,7 @@ function HomeScreen() {
       <Feed>
         <Feed.Header />
         <Text tag="h2" variant="display1">
-            últimas atualizações
+            Últimas atualizações
         </Text>
         <Feed.Posts />
       </Feed>
