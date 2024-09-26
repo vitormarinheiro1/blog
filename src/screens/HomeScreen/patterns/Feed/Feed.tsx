@@ -1,5 +1,6 @@
 import Box from "@src/components/Box/Box";
 import Icon from "@src/components/Icon/Icon";
+import Image from "@src/components/Image/Image";
 import Text from "@src/components/Text/Text";
 
 interface FeedProps {
@@ -19,9 +20,18 @@ Feed.Header = () => {
   return (
     <Box
       styleSheet={{
-        color: "black"
+        color: "black",
       }}
     >
+      <Image
+        styleSheet={{
+          width: '128px',
+          height: '128px',
+          borderRadius: '100%',
+        }}
+        src="https://github.com/vitormarinheiro1.png"
+        alt="Imagem de perfil"
+      />
       <Icon name="youtube" />
       <Icon name="twitter" />
       <Icon name="instagram" />

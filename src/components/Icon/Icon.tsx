@@ -17,7 +17,12 @@ interface IconProps {
 
 export default function Icon({ size, name, ...props }: IconProps) {
   const CurrentIcon = icons[name];
-  if(!CurrentIcon) return <>"{name}" is a not a valid <Icon /></>
+  if (!CurrentIcon)
+    return (
+      <>
+        "{name}" is a not a valid <Icon />
+      </>
+    );
   return (
     <BaseComponent
       as="svg"
@@ -29,15 +34,14 @@ export default function Icon({ size, name, ...props }: IconProps) {
       fill="currentColor"
       viewBox="0 0 25 24"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <CurrentIcon />
     </BaseComponent>
   );
-
-
 }
 
 Icon.defaultProps = {
-  name: 'default_icon',
-  size: 'md',
-}
+  name: "default_icon",
+  size: "md",
+};
