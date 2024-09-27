@@ -19,7 +19,8 @@ export default function Feed({ children }) {
 
 Feed.Header = () => {
   return (
-    <Box>
+    <Box
+    >
       <Image
         styleSheet={{
           width: "128px",

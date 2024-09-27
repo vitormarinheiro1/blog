@@ -10,6 +10,9 @@ interface TextProps {
   children?: React.ReactNode;
   styleSheet?: StyleSheet;
   ref: any;
+  target?: string;
+  rel?: string;
+  as?: keyof JSX.IntrinsicElements; 
 }
 
 const Text = React.forwardRef(
