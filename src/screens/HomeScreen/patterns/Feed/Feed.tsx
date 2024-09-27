@@ -32,10 +32,9 @@ Feed.Header = () => {
         src="https://github.com/vitormarinheiro1.png"
         alt="Imagem de perfil"
       />
-      <Icon name="youtube" />
-      <Icon name="twitter" />
-      <Icon name="instagram" />
+      {/* <Icon name="linkedin" /> */}
       <Icon name="github" />
+      {/* <Icon name="instagram" /> */}
       <Text>Feed Header</Text>
     </Box>
   );
