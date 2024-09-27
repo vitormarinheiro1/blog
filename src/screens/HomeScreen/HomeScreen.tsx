@@ -5,6 +5,7 @@ import Text from "@src/components/Text/Text";
 import Feed from "./patterns/Feed/Feed";
 import Footer from "./patterns/Footer/Footer";
 import { useTheme } from "@src/theme/ThemeProvider";
+import Link from "@src/components/Link/Link";
 
 function HomeScreen() {
   const theme = useTheme();
@@ -18,6 +19,7 @@ function HomeScreen() {
         alignItems: "center",
       }}
     >
+      <Link colorVariant="accent" href="/sobre">Vá para a página Sobre</Link>
       <Background />
       <Menu />
       <Feed>
